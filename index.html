@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sparta Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+#hero {
+  background-image: url("gym.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #1d1d1d;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+/* About section styles */
+#about {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Services section styles */
+#services {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+#services h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#services ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/* #services li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom:
+} */
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Sparta Gym</h1>
+        <nav>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+        <h2>Welcome to Sparta Gym</h2>
+        <p>Get fit and strong with our expert trainers and top-of-the-line equipment.</p>
+        <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+        <h2>About Us</h2>
+        <p>Sparta Gym is dedicated to helping you achieve your fitness goals. Our state-of-the-art facility features top-of-the-line equipment, experienced trainers, and a welcoming community of members who will support and inspire you on your fitness journey.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Personal Training</li>
+            <li>Group Fitness Classes</li>
+            <li>Cardio Equipment</li>
+            <li>Strength Training Equipment</li>
+            <li>Yoga and Pilates</li>
+            <li>Sauna and Steam Rooms</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+        <h2>Class Schedule</h2>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <td>7:00am - Yoga</td>
+                <td>12:00pm - Pilates</td>
+                <td>6:00pm - Zumba</td>
+                </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>8:00am - Bootcamp</td>
+                <td>1:00pm - Yoga</td>
+                <td>7:00pm - Spin</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>9:00am - Pilates</td>
+                <td>2:00pm - Zumba</td>
+                <td>8:00pm - Yoga</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>10:00am - Bootcamp</td>
+                <td>3:00pm - Spin</td>
+                <td>9:00pm - Zumba</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>11:00am - Yoga</td>
+                <td>4:00pm - Pilates</td>
+                <td>10:00pm - Spin</td>
+            </tr>
+         
